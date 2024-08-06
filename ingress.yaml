@@ -20,10 +20,45 @@ spec:
   rules:
     - http:
         paths:
-          - path: /*
+          - path: /test-api
             pathType: ImplementationSpecific
             backend:
               service:
                 name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /createPartner
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /deletePartner/*
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /editPartner/*
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /login
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /*
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-fe-np-service
                 port:
                   number: 80
