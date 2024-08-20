@@ -27,6 +27,69 @@ spec:
                 name: kf-be-members-np-service
                 port:
                   number: 80
+          - path: /getPartners
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /getMembers
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /getMembersFull
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /getOrders
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /getOrdersSet
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /login
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /getLockersUsers
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /getLockers
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /registerMember
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
           - path: /createPartner
             pathType: ImplementationSpecific
             backend:
@@ -41,6 +104,27 @@ spec:
                 name: kf-be-members-np-service
                 port:
                   number: 80
+          - path: /deleteMember/*
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /desactivatePartner/*
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
+          - path: /activatePartner/*
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kf-be-members-np-service
+                port:
+                  number: 80
           - path: /editPartner/*
             pathType: ImplementationSpecific
             backend:
@@ -48,7 +132,7 @@ spec:
                 name: kf-be-members-np-service
                 port:
                   number: 80
-          - path: /login
+          - path: /editMember/*
             pathType: ImplementationSpecific
             backend:
               service:
